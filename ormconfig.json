@@ -5,7 +5,6 @@
   "username": "riwoynffxjfrfr",
   "password": "bfd5bb082f4daac28cd382b83e622ecf8eccc3846806956ac69019508e0be823",
   "database": "d4uh2udfqh5e3p",
-  "ssl": true,
   "migrations": [
     "./dist/database/migrations/*.js"
   ],
