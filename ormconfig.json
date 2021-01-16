@@ -5,6 +5,7 @@
   "username": "zddtvxuhuptfsy",
   "password": "53eedd26706f8d44e38688aa25e49a2bb218f4a60611ad89000ea0d7ddac2d7c",
   "database": "dahbn93dmtmpeh",
+  "ssl": true,
   "migrations": [
     "./dist/database/migrations/*.{ts,js}"
   ],
