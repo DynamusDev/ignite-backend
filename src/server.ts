@@ -14,13 +14,13 @@ const app = express();
 
 const server = http.createServer(app);
 
-let io = require("socket.io")(server);
+// let io = require("socket.io")(server);
 
-app.use((request: Request, response: Response, next)=>{
-  request.io = io;
+// app.use((request: Request, response: Response, next)=>{
+//   request.io = io;
 
-  return next();
-})
+//   return next();
+// })
 
 const port = process.env.PORT || 3333;
 

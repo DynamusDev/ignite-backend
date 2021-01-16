@@ -1,10 +1,10 @@
-{
+module.exports = {
   "type": "postgres",
-  "host": "ec2-52-22-135-159.compute-1.amazonaws.com",
+  "host": process.env.HOST || "localhost",
   "port": 5432,
-  "username": "zddtvxuhuptfsy",
-  "password": "53eedd26706f8d44e38688aa25e49a2bb218f4a60611ad89000ea0d7ddac2d7c",
-  "database": "dahbn93dmtmpeh",
+  "username": process.env.USER || "postgres",
+  "password": process.env.PASS || "postgres",
+  "database": process.env.DATABASE || "ccr",
   "migrations": [
     "./dist/database/migrations/*.{ts,js}"
   ],

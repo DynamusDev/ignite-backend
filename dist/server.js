@@ -13,11 +13,11 @@ require("./database/connection");
 dotenv_1.default.config();
 const app = express_1.default();
 const server = http_1.default.createServer(app);
-let io = require("socket.io")(server);
-app.use((request, response, next) => {
-    request.io = io;
-    return next();
-});
+// let io = require("socket.io")(server);
+// app.use((request: Request, response: Response, next)=>{
+//   request.io = io;
+//   return next();
+// })
 const port = process.env.PORT || 3333;
 app.use(cors_1.default());
 app.use(cors_1.default({ origin: true, credentials: true }));
