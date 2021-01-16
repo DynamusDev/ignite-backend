@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts",
     "prod": "tsc && node ./dist/server.js",
-    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js",
+    "start": "node ./dist/server.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
