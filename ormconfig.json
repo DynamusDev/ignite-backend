@@ -1,0 +1,15 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "postgres",
+  "password": "postgres",
+  "database": "ccr",
+  "migrations": [
+    "./src/database/migrations/*.{ts,js}"
+  ],
+  "entities": ["./src/models/*.{ts,js}"],
+  "cli": {
+    "migrationsDir": "./src/database/migrations"
+  }
+}
