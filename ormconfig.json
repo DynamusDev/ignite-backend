@@ -8,7 +8,7 @@
   "migrations": [
     "./dist/database/migrations/*.js"
   ],
-  "entities": ["./src/models/*.{ts,js}"],
+  "entities": ["./dist/models/*.{ts,js}"],
   "cli": {
     "migrationsDir": "./src/database/migrations"
   }
