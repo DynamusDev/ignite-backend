@@ -1,4 +1,4 @@
-import 'dotenv/config';
+import dotenv from 'dotenv';
 
 import express, { Request, Response } from 'express';
 import bodyParser from'body-parser';
@@ -7,6 +7,8 @@ import  {routes} from './routes';
 import http from "http";
 import * as socketio from "socket.io";
 import './database/connection';
+
+dotenv.config();
 
 const app = express();
 

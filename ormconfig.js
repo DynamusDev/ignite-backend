@@ -6,9 +6,9 @@ module.exports = {
   "password": process.env.PASS || "postgres",
   "database": process.env.DATABASE || "ccr",
   "migrations": [
-    "./src/database/migrations/*.{ts,js}"
+    "./dist/database/migrations/*.{ts,js}"
   ],
-  "entities": ["./src/models/*.{ts,js}"],
+  "entities": ["./dist/models/*.{ts,js}"],
   "cli": {
     "migrationsDir": "./src/database/migrations"
   }
